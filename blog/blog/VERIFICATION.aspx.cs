@@ -20,7 +20,7 @@ namespace blog
             com.ExecuteNonQuery();
             con.Close();
             Thread.Sleep(5000);
-            Response.Redirect("http://mindblogging.apphb.com/index.aspx")
+            Response.Redirect("http://mindblogging.apphb.com/index.aspx");
         }
     }
 }
