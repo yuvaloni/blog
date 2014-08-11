@@ -47,6 +47,20 @@
     <img src="STRIPE.jpg" id ="stripe" />
     <ASP:Label runat="server" ForeColor="White" Font-Size="250%" Font-Bold="true" Font-Names="Arial Narrow" id="hello"/>
     <asp:ImageButton ID="logout" runat="server" ImageUrl="~/LOGOUT.jpg" OnClick="logout_Click" />
+    
+    </div>
+    <div id="myblogs">
+    <ASP:Label runat="server" ForeColor="White" Font-Size="250%" Font-Bold="true" Font-Names="Arial Narrow" id="myblogs" Text="MY BLOGS" />
+        <%
+            System.Data.SqlClient.SqlConnection con = new System.Data.SqlClient.SqlConnection("Data Source=6ed4b43a-6774-4c49-ace3-a38400c2e65b.sqlserver.sequelizer.com;Initial Catalog=db6ed4b43a67744c49ace3a38400c2e65b;Persist Security Info=True;User ID=wjjlfjckldmgpzwa;Password=nAgMM6DJAFoNs4ziyXhfj6KqXaTd3hM6h5GJtHH5YV8PgygENuXVXWZqYYXMkzQt");
+            con.Open();
+            System.Data.SqlClient.SqlCommand com = new System.Data.SqlClient.SqlCommand("Select * FROM USER_" + Session["user"], con);
+            System.Data.SqlClient.SqlDataReader r = com.ExecuteReader();
+            while (r.Read())
+            {
+                Response.Write("<p style='background-color:black;color:white;20% Arial Narrow;'>" + r.GetString(1) + "</P>");
+            }
+             %>
     </div>
     </form>
 </body>
