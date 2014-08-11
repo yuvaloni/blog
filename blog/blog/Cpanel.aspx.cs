@@ -19,7 +19,7 @@ namespace blog
         protected void logout_Click(object sender, ImageClickEventArgs e)
         {
             Session["user"] = null;
-            Response.Redirect("http://mindblogging.apphb.com/index.aspx")
+            Response.Redirect("http://mindblogging.apphb.com/index.aspx");
         }
 
 

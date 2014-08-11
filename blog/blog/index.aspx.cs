@@ -45,7 +45,7 @@ namespace blog
                 Session["user"] = username.Text;
                 r.Close();
                 con.Close();
-                Response.Redirect("http://mindblogging.apphb.com/cpanel.aspx")
+                Response.Redirect("http://mindblogging.apphb.com/cpanel.aspx");
             }
         }
 
