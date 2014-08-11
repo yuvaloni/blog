@@ -75,7 +75,7 @@
              position:fixed;
              z-index:0;
              top:30%;
-             left:41%;
+             left:45%;
              height:2%;
              width:20%;
              font-size:90%;
@@ -84,7 +84,7 @@
              position:fixed;
              z-index:0;
              top:40%;
-             left:41%;
+             left:45%;
              height:2%;
              width:20%;
              font-size:90%;
@@ -146,7 +146,7 @@
              position:fixed;
              z-index:0;
              top:30%;
-             left:41%;
+             left:45%;
              height:2%;
              width:20%;
              font-size:90%;
@@ -155,7 +155,7 @@
              position:fixed;
              z-index:0;
              top:40%;
-             left:41%;
+             left:45%;
              height:2%;
              width:20%;
              font-size:90%;
@@ -164,7 +164,7 @@
              position:fixed;
              z-index:0;
              top:50%;
-             left:41%;
+             left:45%;
              height:2%;
              width:20%;
              font-size:90%;
@@ -173,7 +173,7 @@
              position:fixed;
              z-index:0;
              top:60%;
-             left:41%;
+             left:45%;
              height:2%;
              width:20%;
              font-size:90%;
