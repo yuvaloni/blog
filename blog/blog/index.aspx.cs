@@ -111,7 +111,7 @@ namespace blog
                     
                 };
                 com3.ExecuteNonQuery();
-                SqlCommand com4 = new SqlCommand("CREATE TABLE USER_" + registerusername.Text + "(blog nvarchar, owner int)", con);
+                SqlCommand com4 = new SqlCommand("CREATE TABLE USER_" + registerusername.Text + "(blog nvarchar(max), owner int)", con);
                 com4.ExecuteNonQuery();
                 c.Send(m);
                 Response.Redirect("http://mindblogging.apphb.com/verify.html");
