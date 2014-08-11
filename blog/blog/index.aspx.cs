@@ -34,7 +34,19 @@ namespace blog
 
         protected void dologin_Click(object sender, ImageClickEventArgs e)
         {
-            
+            SqlConnection con = new SqlConnection("Data Source=6ed4b43a-6774-4c49-ace3-a38400c2e65b.sqlserver.sequelizer.com;Initial Catalog=db6ed4b43a67744c49ace3a38400c2e65b;Persist Security Info=True;User ID=wjjlfjckldmgpzwa;Password=nAgMM6DJAFoNs4ziyXhfj6KqXaTd3hM6h5GJtHH5YV8PgygENuXVXWZqYYXMkzQt");
+            con.Open();
+            SqlCommand com = new SqlCommand("SELECT * FROM users WHERE uname = @u AND passwd = @p", con);
+            com.Parameters.Add("@u", SqlDbType.NVarChar).Value = username.Text;
+            com.Parameters.Add("@p", SqlDbType.NVarChar).Value = password.Text;
+            SqlDataReader r = com.ExecuteReader();
+            if(r.Read())
+            {
+                Session["user"] = username.Text;
+                r.Close();
+                con.Close();
+                Response.Redirect("http://mindblogging.apphb.com/cpanel.aspx")
+            }
         }
 
         protected void doregister_Click(object sender, ImageClickEventArgs e)
