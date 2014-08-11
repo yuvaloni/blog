@@ -30,13 +30,19 @@
             top:5%;
             z-index:-1;
         }
-                #logout
+        #logout
         {
             left:20%;
             top:0;
             position:fixed;
             height:15%;
             width:15%;
+            z-index:-1;
+        }
+          #myblogs{
+            position:fixed;
+            left:5%;
+            top:20%;
             z-index:-1;
         }
             </style>
@@ -50,7 +56,7 @@
     
     </div>
     <div id="myblogs">
-    <ASP:Label runat="server" ForeColor="White" Font-Size="250%" Font-Bold="true" Font-Names="Arial Narrow" id="myblogs" Text="MY BLOGS" />
+    <ASP:Label runat="server" ForeColor="Black" Font-Size="250%" Font-Bold="true" Font-Names="Arial Narrow" id="myblogstext" Text="MY BLOGS" />
         <%
             System.Data.SqlClient.SqlConnection con = new System.Data.SqlClient.SqlConnection("Data Source=6ed4b43a-6774-4c49-ace3-a38400c2e65b.sqlserver.sequelizer.com;Initial Catalog=db6ed4b43a67744c49ace3a38400c2e65b;Persist Security Info=True;User ID=wjjlfjckldmgpzwa;Password=nAgMM6DJAFoNs4ziyXhfj6KqXaTd3hM6h5GJtHH5YV8PgygENuXVXWZqYYXMkzQt");
             con.Open();
@@ -58,7 +64,7 @@
             System.Data.SqlClient.SqlDataReader r = com.ExecuteReader();
             while (r.Read())
             {
-                Response.Write("<p style='background-color:black;color:white;20% Arial Narrow;'>" + r.GetString(0) + "</P>");
+                Response.Write("<p style='background-color:black;color:white;70% Arial Narrow;'>" + r.GetString(0) + "</P>");
             }
              %>
     </div>
