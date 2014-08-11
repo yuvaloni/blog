@@ -13,7 +13,7 @@ namespace blog
         {
             logout.Attributes.Add("onmouseover", "src='LOGOUT_CLICK.jpg'");
             logout.Attributes.Add("onmouseout", "src='LOGOUT.jpg'");
-            hello.Text = "Hello" + (string)(Session["user"]);
+            hello.Text = "HELLO " + (string)(Session["user"]);
         }
 
         protected void logout_Click(object sender, ImageClickEventArgs e)

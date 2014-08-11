@@ -30,6 +30,7 @@ namespace blog
         protected void close_Click(object sender, ImageClickEventArgs e)
         {
             loginscreen.Visible = false;
+            wrong.Text = "";
         }
 
         protected void dologin_Click(object sender, ImageClickEventArgs e)
@@ -46,6 +47,10 @@ namespace blog
                 r.Close();
                 con.Close();
                 Response.Redirect("http://mindblogging.apphb.com/cpanel.aspx");
+            }
+            else
+            {
+                wrong.Text="INVALID USENAME OR PASSWORD"
             }
         }
 

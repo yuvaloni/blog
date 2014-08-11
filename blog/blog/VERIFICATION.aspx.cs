@@ -13,13 +13,14 @@ namespace blog
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Response.Write("    <img SRC='VERIFIED.png' height='25%' width='100%'/>");
             SqlConnection con = new SqlConnection("Data Source=6ed4b43a-6774-4c49-ace3-a38400c2e65b.sqlserver.sequelizer.com;Initial Catalog=db6ed4b43a67744c49ace3a38400c2e65b;Persist Security Info=True;User ID=wjjlfjckldmgpzwa;Password=nAgMM6DJAFoNs4ziyXhfj6KqXaTd3hM6h5GJtHH5YV8PgygENuXVXWZqYYXMkzQt");
             con.Open();
             SqlCommand com = new SqlCommand("UPDATE users SET approved=1 WHERE email = @e",con);
             com.Parameters.Add("@e", SqlDbType.NVarChar).Value = Request.QueryString["email"];
             com.ExecuteNonQuery();
             con.Close();
-            Response.Write("    <img SRC='VERIFIED.png' height='25%' width='100%'/>");
+
             Thread.Sleep(5000);
             Response.Redirect("http://mindblogging.apphb.com/index.aspx");
         }
