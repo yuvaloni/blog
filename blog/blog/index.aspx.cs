@@ -50,7 +50,7 @@ namespace blog
             }
             else
             {
-                wrong.Text="INVALID USENAME OR PASSWORD"
+                wrong.Text = "INVALID USENAME OR PASSWORD";
             }
         }
 
