@@ -64,7 +64,7 @@
             System.Data.SqlClient.SqlDataReader r = com.ExecuteReader();
             while (r.Read())
             {
-                Response.Write("<p style='background-color:black;color:white;70% Arial Narrow;'>" + r.GetString(0) + "</P>");
+                Response.Write("<p style='background-color:black;color:white;70% Arial;'>" + r.GetString(0) + "</P>");
             }
              %>
     </div>
