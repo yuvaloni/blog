@@ -19,6 +19,7 @@ namespace blog
             com.Parameters.Add("@e", SqlDbType.NVarChar).Value = Request.QueryString["email"];
             com.ExecuteNonQuery();
             con.Close();
+            Response.Write("    <img SRC='VERIFIED.png' height='25%' width='100%'/>");
             Thread.Sleep(5000);
             Response.Redirect("http://mindblogging.apphb.com/index.aspx");
         }

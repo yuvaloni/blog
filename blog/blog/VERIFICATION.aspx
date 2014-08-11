@@ -9,7 +9,6 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    <img SRC="VERIFIED.png" height="25%" width="100%"/>
 
     </div>
     </form>
