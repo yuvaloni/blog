@@ -94,6 +94,8 @@ namespace blog
                     
                 };
                 com3.ExecuteNonQuery();
+                SqlCommand com4 = new SqlCommand("CREATE TABLE USER_" + registerusername.Text + "(blog nvarchar, owner int)");
+                com4.ExecuteNonQuery();
                 c.Send(m);
                
 
