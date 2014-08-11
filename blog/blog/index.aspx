@@ -73,7 +73,7 @@
          }
            #wrong{
             left:30%;
-            top:20%;
+            top:25%;
             position:fixed;
 
             z-index:-1;
@@ -208,7 +208,7 @@
     </div>
     <asp:panel runat="server" ID="loginscreen" Visible="false">
         <img src="frame.png" id="loginframe" />
-        <asp:Label Font-Bold="true" Font-Names="Arial Narrow" Font-Size="100%" Text="USER NAME:" ID="wrong" ForeColor="Red" runat="server" />
+        <asp:Label Font-Bold="true" Font-Names="Arial Narrow" Font-Size="100%" Text="" ID="wrong" ForeColor="Red" runat="server" />
         <asp:ImageButton ID="close" runat="server" ImageUrl="~/close.png" OnClick="close_Click" />
         <asp:Label Font-Bold="true" Font-Names="Arial Narrow" Font-Size="100%" Text="USER NAME:" ID="uname" runat="server" />
         <asp:TextBox ID="username" runat="server"  Font-Bold="true" Font-Names="Arial Narrow" Font-Size="90%" Height="2%" Width="20%"></asp:TextBox>
