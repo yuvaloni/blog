@@ -1,0 +1,6 @@
+C:\Users\user\Documents\GitHub\blog\blog\blog\bin\blog.dll.config
+C:\Users\user\Documents\GitHub\blog\blog\blog\bin\blog.dll
+C:\Users\user\Documents\GitHub\blog\blog\blog\bin\blog.pdb
+C:\Users\user\Documents\GitHub\blog\blog\blog\obj\Debug\blog.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\GitHub\blog\blog\blog\obj\Debug\blog.dll
+C:\Users\user\Documents\GitHub\blog\blog\blog\obj\Debug\blog.pdb

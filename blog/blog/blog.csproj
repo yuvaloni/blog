@@ -65,10 +65,37 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="close.png" />
+    <Content Include="frame.png" />
+    <Content Include="VERIFICATION.aspx" />
+    <Content Include="VERIFIED.png" />
+    <Content Include="verify.html" />
+    <Content Include="index.aspx" />
+    <Content Include="LOGIN.jpg" />
+    <Content Include="LOGIN_CLICK.jpg" />
+    <Content Include="LOGO.jpg" />
+    <Content Include="REGISTER.jpg" />
+    <Content Include="REGISTER_CLICK.jpg" />
+    <Content Include="STRIPE.jpg" />
+    <Content Include="VERIFY.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VERIFICATION.aspx.cs">
+      <DependentUpon>VERIFICATION.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VERIFICATION.aspx.designer.cs">
+      <DependentUpon>VERIFICATION.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
