@@ -61,7 +61,7 @@ namespace blog
                     SqlCommand com3 = new SqlCommand("INSERT INTO USER_" + (string)(Session["user"])+"(blog,[owner]) values(@n,1)", con);
                     com3.Parameters.Add("@n", SqlDbType.NVarChar).Value = blog.Text;
                     com3.ExecuteNonQuery();
-                    SqlCommand com4 = new SqlCommand("CREATE TABLE BLOG_" + blog.Text + "(id bigint, title nvarchar(max), content text)", con);
+                    SqlCommand com4 = new SqlCommand("CREATE TABLE BLOG_" + blog.Text + "(id bigint, title nvarchar(max), content text, [owner] nvarchar(max), [time] nvarchar(max))", con);
                     com4.ExecuteNonQuery();
                     con.Close();
                     notification.ForeColor = System.Drawing.Color.Green;

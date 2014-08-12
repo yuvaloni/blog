@@ -65,10 +65,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BlogCPanel.aspx" />
     <Content Include="close.png" />
     <Content Include="Cpanel.aspx" />
     <Content Include="CREATE.jpg" />
+    <Content Include="CREATEPOST.jpg" />
+    <Content Include="CREATEPOST_ONCLICK.jpg" />
     <Content Include="CREATE_CLICK.jpg" />
+    <Content Include="DELETEBLOG.jpg" />
+    <Content Include="DELETEBLOG_click.jpg" />
+    <Content Include="DELETEPOST.jpg" />
+    <Content Include="deletepost_click.jpg" />
+    <Content Include="EDIT.jpg" />
+    <Content Include="EditPost.ascx" />
+    <Content Include="edit_click.jpg" />
     <Content Include="frame.png" />
     <Content Include="LOGOUT.jpg" />
     <Content Include="LOGOUT_CLICK.jpg" />
@@ -86,12 +96,26 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlogCPanel.aspx.cs">
+      <DependentUpon>BlogCPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BlogCPanel.aspx.designer.cs">
+      <DependentUpon>BlogCPanel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Cpanel.aspx.cs">
       <DependentUpon>Cpanel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Cpanel.aspx.designer.cs">
       <DependentUpon>Cpanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditPost.ascx.cs">
+      <DependentUpon>EditPost.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditPost.ascx.designer.cs">
+      <DependentUpon>EditPost.ascx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
