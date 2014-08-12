@@ -42,39 +42,23 @@
           #myblogs{
             position:ABSOLUTE;
             left:5%;
-            top:55%;
+            top:65%;
             z-index:1;
         }
           #create{
-                          position:ABSOLUTE;
+            position:ABSOLUTE;
             left:30%;
-            top:10%;
+            top:20%;
             z-index:1;
           }
            #b{
-            left:30%;
-            top:20%;
-            position:absolute;
-
-            z-index:1;
-         }
-           #blog{
-             position:absolute;
-             z-index:1;
-             top:20%;
-             left:45%;
-             height:2%;
-             width:20%;
-             font-size:90%;
-         }
-                      #t{
             left:30%;
             top:30%;
             position:absolute;
 
             z-index:1;
          }
-           #title{
+           #blog{
              position:absolute;
              z-index:1;
              top:30%;
@@ -83,14 +67,14 @@
              width:20%;
              font-size:90%;
          }
-                      #sb{
+                      #t{
             left:30%;
             top:40%;
             position:absolute;
 
             z-index:1;
          }
-           #subtitle{
+           #title{
              position:absolute;
              z-index:1;
              top:40%;
@@ -99,9 +83,25 @@
              width:20%;
              font-size:90%;
          }
+                      #sb{
+            left:30%;
+            top:50%;
+            position:absolute;
+
+            z-index:1;
+         }
+           #subtitle{
+             position:absolute;
+             z-index:1;
+             top:50%;
+             left:45%;
+             height:2%;
+             width:20%;
+             font-size:90%;
+         }
            #docreate{
                position:absolute;
-               top:50%;
+               top:60%;
                left:30%;
                height:5%;
                width:15%
