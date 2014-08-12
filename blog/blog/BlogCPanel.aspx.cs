@@ -33,6 +33,8 @@ namespace blog
                     shit.ImageUrl = "CREATE.jpg";
                     shit.Attributes.Add("onmouseover", "src='LOGOUT_CLICK.jpg'");
                     shit.Attributes.Add("onmouseout", "src='LOGOUT.jpg'");
+                    Posts.Controls.Add(shit);
+                    
                 }
                 while (r.Read());
                 r.Close();
