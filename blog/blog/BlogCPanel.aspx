@@ -73,7 +73,7 @@
     </tr>
 
        <% 
-                img1.Click += new ImageClickEventHandler((object sender, ImageClickEventArgs e) => {Response.Write("zona") ;});
+                img1.Click += new ImageClickEventHandler((object sender, ImageClickEventArgs e) => {img1.Visible=false ;});
                 img1.Attributes.Add("onmouseover", "src='LOGOUT_CLICK.jpg'");
                 img1.Attributes.Add("onmouseout", "src='LOGOUT.jpg'");
             }
