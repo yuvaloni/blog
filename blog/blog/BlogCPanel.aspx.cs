@@ -27,12 +27,21 @@ namespace blog
             else
             {
                 owner = r.GetInt32(1) == 1;
+                do
+                {
+                    ImageButton shit = new ImageButton();
+                    shit.ImageUrl = "CREATE.jpg";
+                    shit.Attributes.Add("onmouseover", "src='LOGOUT_CLICK.jpg'");
+                    shit.Attributes.Add("onmouseout", "src='LOGOUT.jpg'");
+                }
+                while (r.Read());
                 r.Close();
                 con.Close();
             }
             logout.Attributes.Add("onmouseover", "src='LOGOUT_CLICK.jpg'");
             logout.Attributes.Add("onmouseout", "src='LOGOUT.jpg'");
             hello.Text = "HELLO " + (string)(Session["user"]);
+           
         }
 
         protected void logout_Click(object sender, ImageClickEventArgs e)

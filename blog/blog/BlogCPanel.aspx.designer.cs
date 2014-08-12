@@ -49,12 +49,12 @@ namespace blog {
         protected global::System.Web.UI.WebControls.Label myblogstext;
         
         /// <summary>
-        /// img1 control.
+        /// Posts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton img1;
+        protected global::System.Web.UI.WebControls.Panel Posts;
     }
 }
