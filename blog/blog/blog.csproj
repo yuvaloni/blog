@@ -67,6 +67,8 @@
   <ItemGroup>
     <Content Include="close.png" />
     <Content Include="Cpanel.aspx" />
+    <Content Include="CREATE.jpg" />
+    <Content Include="CREATE_CLICK.jpg" />
     <Content Include="frame.png" />
     <Content Include="LOGOUT.jpg" />
     <Content Include="LOGOUT_CLICK.jpg" />

@@ -13,6 +13,8 @@ namespace blog
         {
             logout.Attributes.Add("onmouseover", "src='LOGOUT_CLICK.jpg'");
             logout.Attributes.Add("onmouseout", "src='LOGOUT.jpg'");
+            docreate.Attributes.Add("onmouseover", "src='CREATE_CLICK.jpg'");
+            docreate.Attributes.Add("onmouseout", "src='CREATE.jpg'");
             hello.Text = "HELLO " + (string)(Session["user"]);
         }
 
@@ -20,6 +22,11 @@ namespace blog
         {
             Session["user"] = null;
             Response.Redirect("http://mindblogging.apphb.com/index.aspx");
+        }
+
+        protected void docreate_Click(object sender, ImageClickEventArgs e)
+        {
+
         }
 
 

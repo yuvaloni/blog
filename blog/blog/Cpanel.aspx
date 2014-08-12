@@ -40,11 +40,67 @@
             z-index:-1;
         }
           #myblogs{
-            position:fixed;
+            position:ABSOLUTE;
             left:5%;
-            top:20%;
-            z-index:-1;
+            top:55%;
+            z-index:1;
         }
+           #b{
+            left:30%;
+            top:20%;
+            position:absolute;
+
+            z-index:1;
+         }
+           #blog{
+             position:absolute;
+             z-index:1;
+             top:20%;
+             left:45%;
+             height:2%;
+             width:20%;
+             font-size:90%;
+         }
+                      #t{
+            left:30%;
+            top:30%;
+            position:absolute;
+
+            z-index:1;
+         }
+           #title{
+             position:absolute;
+             z-index:1;
+             top:30%;
+             left:45%;
+             height:2%;
+             width:20%;
+             font-size:90%;
+         }
+                      #sb{
+            left:30%;
+            top:40%;
+            position:absolute;
+
+            z-index:1;
+         }
+           #subtitle{
+             position:absolute;
+             z-index:1;
+             top:40%;
+             left:45%;
+             height:2%;
+             width:20%;
+             font-size:90%;
+         }
+           #docreate{
+               position:absolute;
+               top:50%;
+               left:30%;
+               height:5%;
+               width:15%
+           }
+
             </style>
 <body>
     <form id="form1" runat="server">
@@ -55,6 +111,17 @@
     <asp:ImageButton ID="logout" runat="server" ImageUrl="~/LOGOUT.jpg" OnClick="logout_Click" />
     
     </div>
+    <div id="AddBlog">
+        <ASP:Label runat="server" ForeColor="Black" Font-Size="250%" Font-Bold="true" Font-Names="Arial Narrow" id="Label1" Text="CREATE A BLOG" />
+        <br />
+         <asp:Label Font-Bold="true" Font-Names="Arial Narrow" Font-Size="100%" Text="BLOG'S NAME:" ID="b" runat="server" />
+        <asp:TextBox ID="blog" runat="server"  Font-Bold="true" Font-Names="Arial Narrow" Font-Size="90%" Height="2%" Width="20%"></asp:TextBox>
+        <asp:Label Font-Bold="true" Font-Names="Arial Narrow" Font-Size="100%" Text="TITLE:" ID="t" runat="server" />
+        <asp:TextBox ID="title" runat="server"  Font-Bold="true" Font-Names="Arial Narrow" Font-Size="90%" Height="2%" Width="20%"></asp:TextBox>
+         <asp:Label Font-Bold="true" Font-Names="Arial Narrow" Font-Size="100%" Text="SUB TITLE:" ID="sb" runat="server" />
+        <asp:TextBox ID="subtitle" runat="server"  Font-Bold="true" Font-Names="Arial Narrow" Font-Size="90%" Height="2%" Width="20%"></asp:TextBox>
+         <asp:ImageButton ID="docreate" runat="server" ImageUrl="~/CREATE.jpg" OnClick="docreate_Click" />
+    </div>
     <div id="myblogs">
     <ASP:Label runat="server" ForeColor="Black" Font-Size="250%" Font-Bold="true" Font-Names="Arial Narrow" id="myblogstext" Text="MY BLOGS" />
         <%
@@ -64,7 +131,7 @@
             System.Data.SqlClient.SqlDataReader r = com.ExecuteReader();
             while (r.Read())
             {
-                Response.Write("<p style='font-family:arial;color:white;background:black;font-size:250%;font-weight:bold;'>" + r.GetString(0) + "</P>");
+                Response.Write("<a href='http://mindblogging.apphb.com/blogcpanel.aspx?blog="+r.GetString(0)+"<p style='font-family:arial;color:white;background:black;font-size:250%;font-weight:bold;'>" + r.GetString(0) + "</P>");
             }
              %>
     </div>
