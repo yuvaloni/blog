@@ -143,7 +143,7 @@
             System.Data.SqlClient.SqlDataReader r = com.ExecuteReader();
             while (r.Read())
             {
-                Response.Write("<a href='http://mindblogging.apphb.com/blogcpanel.aspx?blog="+r.GetString(0)+"<p style='font-family:arial;color:white;background:black;font-size:250%;font-weight:bold;'>" + r.GetString(0) + "</P>");
+                Response.Write("<a href='http://mindblogging.apphb.com/blogcpanel.aspx?blog="+r.GetString(0)+"'><p style='font-family:arial;color:white;background:black;font-size:250%;font-weight:bold;'>" + r.GetString(0) + "</P></A>");
             }
              %>
     </div>
