@@ -51,6 +51,11 @@
             top:20%;
             z-index:1;
           }
+          #notification{
+              position:absolute;
+              left:30%;
+              top:27%;
+          }
            #b{
             left:30%;
             top:30%;
@@ -120,6 +125,7 @@
     <div id="AddBlog">
         <ASP:Label runat="server" ForeColor="Black" Font-Size="250%" Font-Bold="true" Font-Names="Arial Narrow" id="create" Text="CREATE A BLOG" />
         <br />
+        <asp:Label Font-Bold="true" Font-Names="Arial Narrow" Font-Size="100%"  ID="notification" runat="server" />
          <asp:Label Font-Bold="true" Font-Names="Arial Narrow" Font-Size="100%" Text="BLOG'S NAME:" ID="b" runat="server" />
         <asp:TextBox ID="blog" runat="server"  Font-Bold="true" Font-Names="Arial Narrow" Font-Size="90%" Height="2%" Width="20%"></asp:TextBox>
         <asp:Label Font-Bold="true" Font-Names="Arial Narrow" Font-Size="100%" Text="TITLE:" ID="t" runat="server" />
