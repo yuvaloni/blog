@@ -43,15 +43,15 @@ namespace blog
                     Panel post = new Panel();
                     Label name = new Label();
                     name.Font.Name = "Arial Narrow";
-                    name.Font.Size = 72;
+                    name.Font.Size = 50;
                     name.Text = r2.GetString(1);
                     post.Controls.Add(name);
                     Image edit = new ImageButton();
                     edit.ImageUrl = "EDIT.jpg";
                     edit.Attributes.Add("onmouseover", "src='edit_click.jpg'");
                     edit.Attributes.Add("onmouseout", "src='EDIT.jpg'");
-                    edit.Height = 200;
-                    edit.Width = 300;
+                    edit.Height = 100;
+                    edit.Width = 150;
                     
                     post.Controls.Add(edit);
                     Image delete = new ImageButton();
