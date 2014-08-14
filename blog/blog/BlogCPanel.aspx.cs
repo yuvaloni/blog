@@ -44,7 +44,7 @@ namespace blog
                     Label name = new Label();
                     name.Font.Name = "Arial Narrow";
                     name.Font.Size = 250;
-                    name.Text = r.GetString(1);
+                    name.Text = r2.GetString(1);
                     post.Controls.Add(name);
                     Image edit = new ImageButton();
                     edit.ImageUrl = "EDIT.jpg";
@@ -65,6 +65,7 @@ namespace blog
                     form1.Controls.Add(post);
 
                 }
+                r2.Close();
                 con.Close();
             }
             logout.Attributes.Add("onmouseover", "src='LOGOUT_CLICK.jpg'");
