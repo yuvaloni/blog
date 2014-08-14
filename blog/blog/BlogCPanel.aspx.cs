@@ -58,8 +58,8 @@ namespace blog
                     delete.ImageUrl = "DELETEPOST.jpg";
                     delete.Attributes.Add("onmouseover", "src='deletepost_click.jpg'");
                     delete.Attributes.Add("onmouseout", "src='DELETEPOST.jpg'");
-                    delete.Height = 200;
-                    delete.Width = 300;
+                    delete.Height = 100;
+                    delete.Width = 150;
                      
                     post.Controls.Add(delete);
                     form1.Controls.Add(post);
