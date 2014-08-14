@@ -63,7 +63,7 @@ namespace blog
                     com3.ExecuteNonQuery();
                     SqlCommand com4 = new SqlCommand("CREATE TABLE BLOG_" + blog.Text + "(id bigint, title nvarchar(max), content text, [owner] nvarchar(max), [time] nvarchar(max))", con);
                     com4.ExecuteNonQuery();
-                    SqlCommand com5 = new SqlCommand("CREATE TABLE BLOGEDITORS_" + blog.Text + "([name] nvarrchar(max))", con);
+                    SqlCommand com5 = new SqlCommand("CREATE TABLE BLOGEDITORS_" + blog.Text + "([name] nvarchar(max))", con);
                     com5.ExecuteNonQuery();
                     con.Close();
                     notification.ForeColor = System.Drawing.Color.Green;
