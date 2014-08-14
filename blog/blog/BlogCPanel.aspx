@@ -50,10 +50,11 @@
     
     </div>
    <div id="myposts">
-    <ASP:Label runat="server" ForeColor="Black" Font-Size="250%" Font-Bold="true" Font-Names="Arial Narrow" id="myblogstext" Text="MY BLOGS" />
+    <ASP:Label runat="server" ForeColor="Black" Font-Size="250%" Font-Bold="true" Font-Names="Arial Narrow" id="myblogstext" Text="MY BLOGS"  />
 
     </div>
-    </form>
     <asp:Panel ID="Posts" runat="server"></asp:Panel>
+    </form>
+
 </body>
 </html>

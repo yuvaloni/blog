@@ -52,17 +52,21 @@ namespace blog
                     edit.Attributes.Add("onmouseout", "src='EDIT.jpg'");
                     edit.Height = 100;
                     edit.Width = 150;
+                   
                     
                     post.Controls.Add(edit);
+                    
                     Image delete = new ImageButton();
                     delete.ImageUrl = "DELETEPOST.jpg";
+                   
                     delete.Attributes.Add("onmouseover", "src='deletepost_click.jpg'");
                     delete.Attributes.Add("onmouseout", "src='DELETEPOST.jpg'");
                     delete.Height = 100;
                     delete.Width = 150;
                      
                     post.Controls.Add(delete);
-                    form1.Controls.Add(post);
+                   Posts.Controls.Add(post);
+
 
                 }
                 r2.Close();
