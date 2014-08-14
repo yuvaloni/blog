@@ -65,6 +65,7 @@ namespace blog
                     delete.Width = 150;
                      
                     post.Controls.Add(delete);
+                    delete.Style.Add(HtmlTextWriterStyle.Top, "25%");
                    Posts.Controls.Add(post);
 
 
