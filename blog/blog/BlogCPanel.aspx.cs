@@ -50,8 +50,8 @@ namespace blog
                     edit.ImageUrl = "EDIT.jpg";
                     edit.Attributes.Add("onmouseover", "src='edit_click.jpg'");
                     edit.Attributes.Add("onmouseout", "src='EDIT.jpg'");
-                    edit.Height = 100;
-                    edit.Width = 150;
+                    edit.Height = 50;
+                    edit.Width = 75;
                    
                     
                     post.Controls.Add(edit);
@@ -61,8 +61,8 @@ namespace blog
                    
                     delete.Attributes.Add("onmouseover", "src='deletepost_click.jpg'");
                     delete.Attributes.Add("onmouseout", "src='DELETEPOST.jpg'");
-                    delete.Height = 100;
-                    delete.Width = 150;
+                    delete.Height = 50;
+                    delete.Width = 75;
                      
                     post.Controls.Add(delete);
                     delete.Style.Add(HtmlTextWriterStyle.Top, "25%");
