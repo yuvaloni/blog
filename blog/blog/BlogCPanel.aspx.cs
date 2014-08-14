@@ -44,6 +44,7 @@ namespace blog
                     Label name = new Label();
                     name.Font.Name = "Arial Narrow";
                     name.Font.Size = 50;
+                    name.Font.Bold = true;
                     name.Text = r2.GetString(1);
                     post.Controls.Add(name);
                     Image edit = new ImageButton();
