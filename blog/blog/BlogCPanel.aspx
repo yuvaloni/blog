@@ -38,6 +38,11 @@
             width:15%;
             z-index:-1;
         }
+        #Posts{
+            position:absolute;
+            left:0;
+            top:16%;
+        }
     </style>
 </head>
 <body>
