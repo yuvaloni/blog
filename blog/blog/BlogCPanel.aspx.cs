@@ -27,17 +27,44 @@ namespace blog
             else
             {
                 owner = r.GetInt32(1) == 1;
-                do
-                {
-                    ImageButton shit = new ImageButton();
-                    shit.ImageUrl = "CREATE.jpg";
-                    shit.Attributes.Add("onmouseover", "src='LOGOUT_CLICK.jpg'");
-                    shit.Attributes.Add("onmouseout", "src='LOGOUT.jpg'");
-                    form1.Controls.Add(shit);
-                    
-                }
-                while (r.Read());
+                
                 r.Close();
+                SqlCommand com2;
+                if(owner)
+                     com2 =new SqlCommand("SELECT * FROM BLOG_"+Request.QueryString["blog"],con);
+                else
+                {
+                    com2 =new SqlCommand("SELECT * FROM BLOG_"+Request.QueryString["blog"]+" WHERE [owner]=@u",con);
+                    com2.Parameters.Add("@u",SqlDbType.NVarChar).Value=(string)(Session["user"]);
+                }
+                SqlDataReader r2 = com2.ExecuteReader();
+                while(r2.Read())
+                {
+                    Panel post = new Panel();
+                    Label name = new Label();
+                    name.Font.Name = "Arial Narrow";
+                    name.Font.Size = 250;
+                    name.Text = r.GetString(1);
+                    post.Controls.Add(name);
+                    Image edit = new ImageButton();
+                    edit.ImageUrl = "EDIT.jpg";
+                    edit.Attributes.Add("onmouseover", "src='edit_click.jpg'");
+                    edit.Attributes.Add("onmouseout", "src='EDIT.jpg'");
+                    edit.Height = 20;
+                    edit.Width = 30;
+                    
+                    post.Controls.Add(edit);
+                    Image delete = new ImageButton();
+                    delete.ImageUrl = "DELETEPOST.jpg";
+                    delete.Attributes.Add("onmouseover", "src='deletepost_click.jpg'");
+                    delete.Attributes.Add("onmouseout", "src='DELETEPOST.jpg'");
+                    delete.Height = 20;
+                    delete.Width = 30;
+                     
+                    post.Controls.Add(delete);
+                    form1.Controls.Add(post);
+
+                }
                 con.Close();
             }
             logout.Attributes.Add("onmouseover", "src='LOGOUT_CLICK.jpg'");
