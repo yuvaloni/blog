@@ -43,23 +43,23 @@ namespace blog
                     Panel post = new Panel();
                     Label name = new Label();
                     name.Font.Name = "Arial Narrow";
-                    name.Font.Size = 250;
+                    name.Font.Size = 72;
                     name.Text = r2.GetString(1);
                     post.Controls.Add(name);
                     Image edit = new ImageButton();
                     edit.ImageUrl = "EDIT.jpg";
                     edit.Attributes.Add("onmouseover", "src='edit_click.jpg'");
                     edit.Attributes.Add("onmouseout", "src='EDIT.jpg'");
-                    edit.Height = 20;
-                    edit.Width = 30;
+                    edit.Height = 200;
+                    edit.Width = 300;
                     
                     post.Controls.Add(edit);
                     Image delete = new ImageButton();
                     delete.ImageUrl = "DELETEPOST.jpg";
                     delete.Attributes.Add("onmouseover", "src='deletepost_click.jpg'");
                     delete.Attributes.Add("onmouseout", "src='DELETEPOST.jpg'");
-                    delete.Height = 20;
-                    delete.Width = 30;
+                    delete.Height = 200;
+                    delete.Width = 300;
                      
                     post.Controls.Add(delete);
                     form1.Controls.Add(post);
