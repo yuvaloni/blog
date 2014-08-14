@@ -38,7 +38,7 @@
             width:15%;
             z-index:-1;
         }
-        #Posts{
+        #myposts{
             position:absolute;
             left:0;
             top:16%;
@@ -56,9 +56,9 @@
     </div>
    <div id="myposts">
     <ASP:Label runat="server" ForeColor="Black" Font-Size="250%" Font-Bold="true" Font-Names="Arial Narrow" id="myblogstext" Text="MY BLOGS"  />
-
+           <asp:Panel ID="Posts" runat="server"></asp:Panel>
     </div>
-    <asp:Panel ID="Posts" runat="server"></asp:Panel>
+
     </form>
 
 </body>
