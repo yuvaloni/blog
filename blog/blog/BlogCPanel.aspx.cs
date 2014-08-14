@@ -74,7 +74,7 @@ namespace blog
                 }
                 r2.Close();
                 con.Close();
-                De
+                
             }
             logout.Attributes.Add("onmouseover", "src='LOGOUT_CLICK.jpg'");
             logout.Attributes.Add("onmouseout", "src='LOGOUT.jpg'");
