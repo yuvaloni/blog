@@ -44,7 +44,7 @@
             top:16%;
         }
                    #docreatepost{
-               position:absolute;
+               position:relative;
 
                height:5%;
                width:15%
