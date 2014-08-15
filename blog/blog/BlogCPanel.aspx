@@ -50,12 +50,14 @@
 <div id ="top">
     <img src="LOGO.jpg" id="logo"/>
     <img src="STRIPE.jpg" id ="stripe" />
+
     <ASP:Label runat="server" ForeColor="White" Font-Size="250%" Font-Bold="true" Font-Names="Arial Narrow" id="hello"/>
     <asp:ImageButton ID="logout" runat="server" ImageUrl="~/LOGOUT.jpg" OnClick="logout_Click" />
     
     </div>
+
    <div id="myposts">
-    <ASP:Label runat="server" ForeColor="Black" Font-Size="250%" Font-Bold="true" Font-Names="Arial Narrow" id="myblogstext" Text="MY BLOGS"  />
+    <ASP:Label runat="server" ForeColor="Black" Font-Size="250%" Font-Bold="true" Font-Names="Arial Narrow" id="myblogstext" Text="MY POSTS"  />
            <asp:Panel ID="Posts" runat="server"></asp:Panel>
     </div>
 
