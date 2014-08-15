@@ -43,6 +43,12 @@
             left:0;
             top:16%;
         }
+                   #docreatepost{
+               position:absolute;
+
+               height:5%;
+               width:15%
+           }
     </style>
 </head>
 <body>
