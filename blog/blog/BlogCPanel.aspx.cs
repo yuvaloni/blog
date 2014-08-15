@@ -52,7 +52,7 @@ namespace blog
                     edit.Attributes.Add("onmouseover", "src='edit_click.jpg'");
                     edit.Attributes.Add("onmouseout", "src='EDIT.jpg'");
                     edit.Height = 50;
-                    edit.Width = 100;
+                    edit.Width = 150;
                    
                    
                     
@@ -64,7 +64,7 @@ namespace blog
                     delete.Attributes.Add("onmouseover", "src='deletepost_click.jpg'");
                     delete.Attributes.Add("onmouseout", "src='DELETEPOST.jpg'");
                     delete.Height = 50;
-                    delete.Width = 100;
+                    delete.Width = 150;
                      delete.Click+= new ImageClickEventHandler((object s, ImageClickEventArgs args)=>{SqlConnection con2 = new SqlConnection("Data Source=6ed4b43a-6774-4c49-ace3-a38400c2e65b.sqlserver.sequelizer.com;Initial Catalog=db6ed4b43a67744c49ace3a38400c2e65b;Persist Security Info=True;User ID=wjjlfjckldmgpzwa;Password=nAgMM6DJAFoNs4ziyXhfj6KqXaTd3hM6h5GJtHH5YV8PgygENuXVXWZqYYXMkzQt");con2.Open(); SqlCommand com4 = new SqlCommand("DELETE BLOG_"+Request.QueryString["blog"]+" WHERE title=@n",con2); com4.Parameters.Add("@n",SqlDbType.NVarChar).Value=name.Text;com4.ExecuteNonQuery();con2.Close();});
                     post.Controls.Add(delete);
                     delete.Style.Add(HtmlTextWriterStyle.Top, "25%");
@@ -86,6 +86,11 @@ namespace blog
         {
             Session["user"] = null;
             Response.Redirect("http://mindblogging.apphb.com/index.aspx");
+        }
+
+        protected void docreatepost_Click(object sender, ImageClickEventArgs e)
+        {
+
         }
 
     }

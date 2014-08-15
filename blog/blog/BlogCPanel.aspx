@@ -55,7 +55,7 @@
     <asp:ImageButton ID="logout" runat="server" ImageUrl="~/LOGOUT.jpg" OnClick="logout_Click" />
     
     </div>
-
+     <asp:ImageButton ID="docreatepost" runat="server" ImageUrl="~/CREATEPOST.jpg" OnClick="docreatepost_Click" />
    <div id="myposts">
     <ASP:Label runat="server" ForeColor="Black" Font-Size="250%" Font-Bold="true" Font-Names="Arial Narrow" id="myblogstext" Text="MY POSTS"  />
            <asp:Panel ID="Posts" runat="server"></asp:Panel>
